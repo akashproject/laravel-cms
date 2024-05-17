@@ -1,8 +1,24 @@
+.dropzone {
+    border-style: dotted;
+}
 .image-thumbnail {
-    width: 132px;
-    margin: 0.5rem;
+    width: 114px;
+    margin: 3px;
     border: 1px solid #cfcfcf;
     padding: 1px;
     display: inline-flex;
     position: relative;
+}
+.image-thumbnail span {
+    position: absolute;
+    bottom: 0;
+    background: #f2f2f2d9;
+    color: #333;
+    font-weight: 600;
+    width: 100%;
+    padding: 2px;
+    width: 100%;
+}
+.file-content {
+    display: inline-block;
 }

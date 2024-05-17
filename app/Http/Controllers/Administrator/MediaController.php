@@ -135,14 +135,13 @@ class MediaController extends Controller
     public function search(Request $request){
         try {
             $data = $request->all();
-            $media = Media::where('name', 'like', '%' . $data['keyword'] . '%')
+            $media = Media::select("id","alternative")->where('name', 'like', '%' . $data['keyword'] . '%')
                     ->orWhere('filename', 'like', '%' . $data['keyword'] . '%')
                     ->get();
             $a = '';
             foreach($media as $value){
-                print_r($value);
                 $a .= '<div class="image-thumbnail" data-id="'.$value->id.'">';
-                $a .= '<img src="'.getSizedImage('thumb',$value->id).'" alt="'.$value->alternative.'" style="width:100%">';
+                $a .= '<img src="'.getSizedImage($value->id,'thumb').'" alt="'.$value->alternative.'" style="width:100%">';
                 $a .= '</div>';
             } 
             return $a;

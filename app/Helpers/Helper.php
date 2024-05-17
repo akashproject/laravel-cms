@@ -33,7 +33,6 @@ if (! function_exists('getSizedImage')) {
        
         if($media){
             $filename = env('APP_URL').$media->path.'/'.$size.$media->filename;
-            echo $filename; exit;
             return $filename;
         } else {
             return false;
