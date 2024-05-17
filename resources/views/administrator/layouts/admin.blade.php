@@ -24,10 +24,12 @@
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/fonts/boxicons.css') }}" />
     <link href="{{ url('assets/administrator/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.css">
     <!-- Core CSS -->
     <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/css/core.css') }}" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ url('assets/administrator-v2/css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator-v2/css/own.css') }}" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
@@ -110,7 +112,7 @@
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!--Wave Effects -->
-
+<script src="{{ url('assets/administrator-v2/js/own.js') }}"></script>
 <script>
     $('#zero_config').DataTable();
     tinymce.init({

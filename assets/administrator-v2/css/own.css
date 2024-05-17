@@ -1,0 +1,8 @@
+.image-thumbnail {
+    width: 132px;
+    margin: 0.5rem;
+    border: 1px solid #cfcfcf;
+    padding: 1px;
+    display: inline-flex;
+    position: relative;
+}
