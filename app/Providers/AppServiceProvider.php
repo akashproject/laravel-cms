@@ -30,6 +30,10 @@ class AppServiceProvider extends ServiceProvider
         {
             $media = Media::orderBy('created_at', 'desc')->get();
             $view->with('media', $media);
+
+            // Get User
+            $loggedInUser = Auth::user();
+            $view->with('loggedInUser', $loggedInUser);
         });
     }
 }

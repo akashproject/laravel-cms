@@ -22,26 +22,26 @@
 
     <!-- Styles -->
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/fonts/boxicons.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/fonts/boxicons.css') }}" />
     <link href="{{ url('assets/administrator/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.css">
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/css/core.css') }}" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/css/demo.css') }}" />
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/css/own.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/core.css') }}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/css/own.css') }}" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/libs/apex-charts/apex-charts.css') }}" />
-    <link rel="stylesheet" href="{{ url('assets/administrator-v2/vendor/css/pages/page-auth.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/pages/page-auth.css') }}" />
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="{{ url('assets/administrator-v2/vendor/js/helpers.js') }}"></script>
+    <script src="{{ url('assets/administrator/vendor/js/helpers.js') }}"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{ url('assets/administrator-v2/js/config.js') }}"></script>
+    <script src="{{ url('assets/administrator/js/config.js') }}"></script>
     @yield('style')
 </head>
 
@@ -93,26 +93,26 @@
 
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->
-<script src="{{ url('assets/administrator-v2/vendor/libs/jquery/jquery.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/jquery/jquery.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" ></script>
-<script src="{{ url('assets/administrator-v2/vendor/libs/popper/popper.js') }}"></script>
-<script src="{{ url('assets/administrator-v2/vendor/js/bootstrap.js') }}"></script>
-<script src="{{ url('assets/administrator-v2/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/popper/popper.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/js/bootstrap.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.js"></script>
-<script src="{{ url('assets/administrator-v2/vendor/js/menu.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/js/menu.js') }}"></script>
 <!-- endbuild -->
 
 <!-- Vendors JS -->
-<script src="{{ url('assets/administrator-v2/vendor/libs/apex-charts/apexcharts.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.0/tinymce.min.js"></script>
 <!-- Main JS -->
-<script src="{{ url('assets/administrator-v2/js/main.js') }}"></script>
+<script src="{{ url('assets/administrator/js/main.js') }}"></script>
 <!-- Page JS -->
-<script src="{{ url('assets/administrator-v2/js/dashboards-analytics.js') }}"></script>
+<script src="{{ url('assets/administrator/js/dashboards-analytics.js') }}"></script>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!--Wave Effects -->
-<script src="{{ url('assets/administrator-v2/js/own.js') }}"></script>
+<script src="{{ url('assets/administrator/js/own.js') }}"></script>
 <script>
     $('#zero_config').DataTable();
     tinymce.init({

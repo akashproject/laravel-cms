@@ -83,7 +83,16 @@
                     </div>
                     </div>
                 </div>
-                
+                <div class="row mb-3">
+                    <label class="col-sm-2 form-label" for="basic-icon-default-phone">Status</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" name="status">
+                            <option selected>Select Status</option>
+                            <option value="1" {{($user->status == 1)? 'selected':'' }}>Enable</option>
+                            <option value="0" {{($user->status == 0)? 'selected':'' }}>Disable</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="row justify-content-end">
                     <div class="col-sm-10">
                     <button type="submit" class="btn btn-primary">Update Record</button>

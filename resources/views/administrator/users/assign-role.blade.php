@@ -29,26 +29,26 @@
                 @endif
                 <div class="row">
                     <div class="col-md-7" >
-                        <div class="form-group row">
+                        <div class="form-group row  mb-3">
                             <label for="name" class="col-sm-3 text-right control-label col-form-label">Name</label>
                             <div class="col-sm-9">
                                 <span class="form-control"> {{ $user->name }} </span>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row  mb-3">
                             <label for="name" class="col-sm-3 text-right control-label col-form-label">Email</label>
                             <div class="col-sm-9">
                                 <span class="form-control"> {{ $user->email }} </span>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row  mb-3">
                             <label for="name" class="col-sm-3 text-right control-label col-form-label">Mobile</label>
                             <div class="col-sm-9">
                                 <span class="form-control"> {{ $user->mobile }} </span>
                             </div>
                         </div>                       
                         
-                        <div class="form-group row">
+                        <div class="form-group row  mb-3">
 							<label for="roles" class="col-sm-3 text-right control-label col-form-label">Roles</label>
 							<div class="col-sm-9">
                                 <select name="roles[]" id="roles" class="select2 form-control custom-select" style="width: 100%; height:136px;" multiple>	

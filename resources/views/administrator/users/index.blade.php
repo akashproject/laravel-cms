@@ -12,6 +12,7 @@
 							<th>Name</th>
 							<th>Email</th>
 							<th>Mobile</th>
+							<th>Status</th>
 							<th>Actions</th>
 						</tr>
                     </thead>
@@ -21,6 +22,19 @@
 							<td>{{ $value->name }}</td>													
 							<td>{{ $value->email }}</td>													
 							<td>{{ $value->mobile }}</td>
+							<td>
+								@switch($value->status)
+								@case('0')
+									<span class="badge bg-label-danger me-1">
+									Deactive
+								@break
+								@case('1')
+									<span class="badge bg-label-success me-1">
+									Active
+								@break
+								@endswitch
+								</span>
+							</td>
 							<td>
 							<div class="dropdown">
 								<button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -32,7 +46,7 @@
 									>
 									@can('delete')
 									<a class="dropdown-item" href="{{ route('admin-delete-user',$value->id) }}"
-										><i class="bx bx-trash me-1"></i> Delete</a
+										><i class="bx bx-trash me-1"></i> Deactive</a
 									>
 									@endcan
 									@role('super-admin')
